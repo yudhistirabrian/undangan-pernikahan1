@@ -1,0 +1,380 @@
+:root {
+   --primary: #f78ca2;
+   --bg: #0a0a0a;
+   --secondary: #e9b824;
+}
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html {
+   scroll-behavior: smooth;
+}
+body {
+   font-family: 'Work Sans', sans-serif;
+   overflow-x: hidden;
+}
+.cover {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-image: url('assets/cover-bg2.jpg');
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: white;
+   padding: 3rem 1rem;
+   z-index: 999;
+}
+.cover h3 {
+   font-family: 'Sacramento', cursive;
+   font-size: 5rem;
+   font-weight: 500;
+   color: var(--primary);
+}
+.cover p:nth-child(3) {
+   font-size: 2rem;
+   margin-top: -1rem;
+}
+.cover .buka-undangan {
+   background-color: var(--primary);
+   border-radius: 10px;
+   padding: 10px 20px;
+   color: white;
+   font-weight: 600;
+   word-spacing: 5px;
+   box-shadow: 5px 6px 0px 2px rgba(255, 255, 255, 0.7);
+   border: none;
+   margin-top: 5rem;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+   font-size: 0.9rem;
+   transition: all 0.2s;
+}
+.cover .buka-undangan:hover,
+.cover .buka-undangan:focus {
+   box-shadow: 2px 4px 0px 2px rgba(255, 255, 255, 0.5);
+   transform: translate(3px);
+}
+.hero {
+   background-image: url('assets/bg.png');
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+   text-align: center;
+   padding: 3rem 1.2rem;
+   color: var(--bg);
+}
+.hero h1:nth-child(1),
+.acara h1:nth-child(1),
+.kisah h1:nth-child(1),
+.gallery h1:nth-child(1) {
+   font-size: 4rem;
+   font-weight: normal;
+   color: var(--primary);
+   font-family: 'Sacramento', cursive;
+}
+.hero main {
+   margin-top: 4rem;
+   display: flex;
+   flex-direction: row;
+}
+.hero main h1:nth-child(2) {
+   font-family: 'Sacramento', cursive;
+   color: var(--primary);
+   font-size: 5rem;
+}
+.hero main .card {
+   width: 40%;
+   margin: 0 auto;
+}
+.hero main .card img {
+   width: 130px;
+   border-bottom-right-radius: 30px;
+   border-top-left-radius: 30px;
+}
+.hero main .card .card-title {
+   font-size: 2.5rem;
+   color: var(--primary);
+   margin-top: 1rem;
+   font-weight: normal;
+   font-family: 'Sacramento', cursive;
+}
+.hero main .card p:nth-child(2) {
+   margin-top: -0.5rem;
+   font-weight: 300;
+}
+.waktu {
+   background-color: var(--bg);
+   /* background-image: url('assets/cover-bg5.jpg');
+   background-size: cover; */
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   padding: 3rem 1rem;
+}
+.acara {
+   background-image: url('assets/cover-bg1.jpg');
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 3rem 1rem;
+   color: var(--bg);
+}
+.acara .view-maps {
+   text-decoration: none;
+   margin-top: 1rem;
+   background-color: var(--primary);
+   border-radius: 10px;
+   padding: 10px 20px;
+   color: white;
+   font-weight: 600;
+   font-size: 1rem;
+   word-spacing: 5px;
+   box-shadow: 5px 6px 0px 2px rgba(0, 0, 0, 0.7);
+   border: none;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+.acara .view-maps:hover {
+   box-shadow: 2px 4px 0px 2px rgba(0, 0, 0, 0.5);
+   transform: translate(3px);
+}
+.acara main {
+   margin: 1.5rem 0;
+   display: flex;
+   gap: 3rem;
+}
+.acara main .card-acara {
+   border-bottom: 3px solid var(--bg);
+   border-top: 3px solid var(--bg);
+   padding: 2rem 1rem;
+   text-align: center;
+   width: 200px;
+}
+.acara main .card-acara .card-acara-title,
+.card-kisah .card-kisah-body h3 {
+   font-size: 2rem;
+   font-family: 'Sacramento', cursive;
+   color: var(--primary);
+   font-weight: normal;
+}
+.acara main .card-acara .card-acara-desc {
+   font-size: 1.2rem;
+   color: white;
+}
+.kisah {
+   background-image: url('assets/bg.png');
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 3rem 1rem;
+   color: var(--bg);
+}
+.kisah main {
+   margin-top: 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* gap: 10px; */
+}
+.card-kisah {
+   display: flex;
+   align-items: center;
+   padding: 1.5rem;
+   width: 80%;
+}
+.card-kisah:nth-child(2) {
+   flex-direction: row-reverse;
+}
+.card-kisah img {
+   border-radius: 50%;
+   width: 150px;
+   height: 150px;
+}
+.card-kisah .card-kisah-body {
+   padding: 1rem;
+}
+.gallery {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 3rem 1rem;
+   color: var(--bg);
+}
+.gallery main {
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   gap: 1rem;
+}
+.gallery main a {
+   text-decoration: none;
+   overflow: hidden;
+   transition: all 0.2s;
+   width: 100%;
+   height: 100%;
+}
+.gallery main a:hover {
+   transform: scale(1.02);
+}
+.gallery main a img {
+   width: 100%;
+}
+footer {
+   background-color: var(--bg);
+   color: white;
+   padding: 2rem 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-weight: 300;
+}
+footer .ucapan {
+   text-align: center;
+}
+footer h2:nth-child(3) {
+   font-family: 'Sacramento', cursive;
+   margin-top: 2rem;
+   color: var(--primary);
+   word-spacing: 5px;
+}
+footer .amplop {
+   margin-top: 1.5rem;
+}
+footer .amplop .card-amplop:nth-child(1) label,
+footer .amplop .card-amplop:nth-child(2) h4 {
+   display: block;
+   font-family: 'Sacramento', cursive;
+   color: var(--primary);
+   font-size: 1.5rem;
+   text-align: center;
+}
+footer .amplop .card-amplop:nth-child(1) input {
+   padding: 8px 15px;
+   border-radius: 5px;
+   font-size: 0.8rem;
+   border: 2px solid transparent;
+}
+footer .amplop .card-amplop:nth-child(1) input:focus {
+   outline: none !important;
+   border: 2px solid var(--primary);
+}
+footer .amplop .card-amplop:nth-child(1) button {
+   padding: 10px 13px;
+   border-radius: 5px;
+   cursor: pointer;
+   color: white;
+   background-color: var(--primary);
+   border: none;
+   transition: all 0.2s;
+}
+footer .amplop .card-amplop:nth-child(1) button:hover {
+   background-color: #f75e7d;
+}
+footer .amplop .card-amplop:nth-child(2) h4 {
+   font-weight: normal;
+   margin-top: 1rem;
+}
+footer .amplop .card-amplop:nth-child(2) p {
+   text-align: center;
+   font-size: 1.3rem;
+}
+@media screen and (max-width: 912px) {
+   .hero main .card {
+      width: 70%;
+   }
+   .hero h1:nth-child(1),
+   .acara h1:nth-child(1),
+   .kisah h1:nth-child(1) {
+      font-size: 2.5rem;
+   }
+   .hero p:nth-child(2),
+   .hero p:nth-child(3),
+   .acara p:nth-child(2),
+   .acara p:nth-child(4),
+   .kisah p:nth-child(2),
+   .card-kisah-body p:nth-child(2) {
+      font-size: 0.8rem;
+   }
+   .cards .card-acara {
+      border-width: 2px;
+   }
+   .cards .card-acara .card-acara-title,
+   .card-kisah .card-kisah-body h3 {
+      font-size: 1.7rem;
+   }
+   .acara .view-maps {
+      font-size: 0.8rem;
+   }
+   .card-kisah {
+      width: 100%;
+   }
+   .gallery main {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+   }
+}
+@media screen and (max-width: 768px) {
+   .hero main {
+      flex-direction: column;
+   }
+   .hero main .card {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      text-align: left;
+   }
+   .hero main .card:nth-child(3) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 20px;
+      width: 100%;
+      text-align: right;
+   }
+   .card-kisah img {
+      width: 100px;
+      height: 100px;
+   }
+   .gallery main {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+}
+@media screen and (max-width: 576px) {
+   .hero main .card {
+      width: 100%;
+   }
+   .hero p:nth-child(3) {
+      margin-top: 1rem;
+   }
+   .cards {
+      flex-direction: column;
+      gap: 0;
+   }
+   .cards .card-acara:nth-child(1) {
+      border-bottom: none;
+   }
+   .cards .card-acara:nth-child(2) {
+      border-top: none;
+   }
+   .gallery main {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+   }
+}
